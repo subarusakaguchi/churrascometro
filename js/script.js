@@ -1,7 +1,18 @@
+var inputAdulto = document.getElementById('adulto')
+var inputCrianca = document.getElementById('crianca')
+var inputHora = document.getElementById('hora')
+inputAdulto.addEventListener('keyup', enter)
+inputCrianca.addEventListener('keyup', enter)
+inputHora.addEventListener('keyup', enter)
+
+function enter(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault()
+        document.getElementById('btn').click()
+    }
+}
+
 function calcular() {
-    let inputAdulto = document.getElementById('adulto')
-    let inputCrianca = document.getElementById('crianca')
-    let inputHora = document.getElementById('hora')
     if (inputAdulto.value.length === 0 || inputCrianca.value.length === 0 || inputHora.value.length === 0) {
         alert('ERRO! você esqueceu algum dos valores, por favor preencha todos os dados!')
     } else {
