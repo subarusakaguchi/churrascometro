@@ -14,15 +14,17 @@
 
     <main>
         <section>
-            <div id="dados">
-                <input type="number" name="adulto" id="adulto" min="0" placeholder="Adultos">
-                <input type="number" name="crianca" id="crianca" min="0" placeholder="Crianças">
-                <input type="number" name="hora" id="hora" min="0" placeholder="Tempo em horas(h)">
-                <input type="button" value="Calcular">
-            </div>
-            
-            <div id="res">
-                Resultado
+            <div id="container">
+                <div id="dados">
+                    <input type="number" name="adulto" id="adulto" min="0" placeholder="Adultos">
+                    <input type="number" name="crianca" id="crianca" min="0" placeholder="Crianças">
+                    <input type="number" name="hora" id="hora" min="0" placeholder="Tempo em horas(h)">
+                    <input type="button" value="Calcular" onclick="calcular()" id="btn">
+
+                    <div id="res">
+
+                    </div>
+                </div>
             </div>
         </section>
     </main>
